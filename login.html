@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Form</title>
+  
+</head>
+<body class="bg-blue-500">
+
+  <form class="flex justify-center mt-28">
+    <div class="m-10 p-10 border rounded-md shadow md:w-[400px] hover:shadow-purple-300 hover:shadow-lg transition-all duration-500 bg-white">
+      <p class="text-center font-bold text-xl mb-3">Login form</p>
+
+    <label class="font-bold text-lg mb-2">Username</label>
+    <input class="border rounded-md bg-gray-100 h-10 w-full my-2 px-2 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200" placeholder="please enter your username" required type="text" name="username">
+
+    <label class="font-bold text-lg ">Password</label>
+    <input class="border rounded-md bg-gray-100 h-10 w-full my-2 px-2 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200" placeholder="please enter your password" required type="password" name="password">
+
+    <!--start- keep login and forget password -->
+    <div class="flex justify-between">
+      <div>
+    <input class="my-4" type="checkbox" name="checkbox">
+    <label class="font-semibold my-4 mx-2">Keep me login</label>
+  </div>
+    <a class="font-semibold my-3 text-red-600 " href="forget_pass.html">Forget password</a>
+  </div>
+  <!--end- keep login and forget password -->  
+
+    <button class="my-2 py-2 px-4 rounded-md bg-blue-500 text-white font-semibold drop-shadow-md hover:shadow-blue-300" type="Submit" class="">Log in</button>
+     
+      <label class="font-semibold ml-2 ">Dont have account ?</label>
+      <a href="registration.html" class="rounder-md font-semibold text-md text-blue-800">Click Here</a>
+
+
+  </div>
+  </form>
+
+</body>
+</html>
